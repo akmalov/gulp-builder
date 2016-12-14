@@ -7,9 +7,15 @@ global.$ = {
     task: require('./gulp/paths/tasks.js'),
     jsFoundation: require('./gulp/paths/js.foundation.js'),
     cssFoundation: require('./gulp/paths/css.foundation.js'),
-    app: require('./gulp/paths/app.js')
+    mainjs: require('./gulp/paths/main.js')
   },
   gulp: require('gulp'),
+  rimraf: require('del'),
+  merge: require('merge-stream'),
+  browserify : require('browserify'),
+  source : require('vinyl-source-stream'),
+  buffer : require('vinyl-buffer'),
+  babel : require('babelify'),
   del: require('del'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
