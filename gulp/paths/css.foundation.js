@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = [
-  './bower_components/normalize-css/normalize.css'
+  './node_modules/normalize-css/normalize.css'
 ];

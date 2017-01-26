@@ -10,7 +10,6 @@ global.$ = {
     mainjs: require('./gulp/paths/main.js')
   },
   gulp: require('gulp'),
-  rimraf: require('del'),
   merge: require('merge-stream'),
   browserify : require('browserify'),
   source : require('vinyl-source-stream'),
